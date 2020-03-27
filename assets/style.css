@@ -29,6 +29,7 @@ p {
     line-height: 1.7em;
     color: #black;
 	text-indent: 2em;
+	text-align: justify;
 }
 
 a, a:hover, a:focus {
