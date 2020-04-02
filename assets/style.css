@@ -3,6 +3,12 @@ body {
     font-family: 'Roboto', sans-serif;
     background: #ffffff;
 	color: black;
+    transition: all 0.3s;
+}
+
+body.dark-mode {
+  background-color: black;
+  color: white;
 }
 
 :target::before {
@@ -96,6 +102,10 @@ a, a:hover, a:focus {
     padding-top: 0px;
 }
 
+#sidebar.dark-mode {
+    background: black;
+}
+
 #sidebar.active {
     margin-left: -300px;
 }
@@ -137,11 +147,13 @@ a, a:hover, a:focus {
 }
 ----------------------------------------------------- */
 
+#sidebar ul {
+	list-style: none;
+}
+
 #sidebar ul li a {
     padding: 0px;
     font-size: 1.1em;
-    display: list-item;
-	list-style: none;
 	margin-left: 0px;
 }
 
@@ -158,6 +170,10 @@ a, a:hover, a:focus {
   margin-left: -1em;
   font-size: 1.3em;
   font-style: normal !important;
+}
+
+#sidebar.dark-mode ul li a::before {
+  color: white;
 }
 
 #sidebar ul li a:hover {
@@ -184,6 +200,11 @@ a[data-toggle="collapse"] {
     background: #ffffff;
 	color: #000000;
 	white-space: nowrap
+}
+
+#sidebar.dark-mode ul ul a {
+	background: black;
+	color: white;
 }
 
 #sidebar ul li a.active {
