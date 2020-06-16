@@ -170,15 +170,17 @@ a, a:hover, a:focus {
   margin-left: -1em;
   font-size: 1.3em;
   font-style: normal !important;
+  transition: color 0s !important;
 }
 
 #sidebar.dark-mode ul li a::before {
   color: white;
+  transition: color 0s !important;
 }
 
 #sidebar ul li a:hover {
     color: #ffffff;
-    background: #9E7E38;
+    background: #9E7E38 !important;
 	border-radius: 0px 15px 15px 0px;
 }
 
@@ -197,7 +199,6 @@ a[data-toggle="collapse"] {
 #sidebar ul ul a {
     font-size: 0.9em !important;
     padding-left: 0px !important;
-    background: #ffffff;
 	color: #000000;
 	white-space: nowrap
 }
@@ -230,7 +231,7 @@ a[data-toggle="collapse"] {
 #content {
     width: calc(100% - 300px);
     min-height: 100vh;
-    transition: all 0.3s;
+    transition: all 0.3s , color 0s;
     position: absolute;
     top: 0;
     right: 0;
