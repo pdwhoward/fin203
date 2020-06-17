@@ -68,6 +68,7 @@ a, a:hover, a:focus {
 
 .card-title, .card-subtitle, .card-text {
 	text-indent: 0em;
+	color: black;
 }
 
 /* ---------------------------------------------------
