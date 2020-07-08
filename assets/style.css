@@ -48,6 +48,14 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
+pre code {
+  border-radius: 25px;
+  background-color: #E7DCBA;
+  border: none;
+  display: block;
+  padding: 20px;
+}
+
 .navbar {
     padding: 15px 0px;
     background: #fff;
