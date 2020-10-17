@@ -6,11 +6,6 @@ body {
     transition: all 0.3s;
 }
 
-body.dark-mode {
-  background-color: black;
-  color: white;
-}
-
 :target::before {
     content: '';
     display: block;
@@ -65,17 +60,6 @@ pre code {
     box-shadow: 1px 1px 5px #888888;
 	height: 50px !important;
 	width: 100%;
-    transition: top 0.5s ease;
-}
-
-.navbar-hide {
-    top: -56px;
-}
-
-.navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
 }
 
 .card-title, .card-subtitle, .card-text {
@@ -136,16 +120,7 @@ pre code {
     z-index: 999;
     background: #ffffff;
     color: #fff;
-    transition: all 0.3s;
     padding-top: 0px;
-}
-
-#sidebar.dark-mode {
-    background: black;
-}
-
-#sidebar.active {
-    margin-left: -300px;
 }
 
 #sidebar .sidebar-header {
@@ -170,20 +145,6 @@ pre code {
     color: #fff;
     padding: 0px;
 }
-
-/* Original ---------------------------------------------------
-#sidebar ul li a {
-    padding: 0px;
-    font-size: 1.1em;
-    display: list-item;
-	list-style-type: disc;
-	margin-left: 0px;
-}
-
-#sidebar ul li ul {
-    padding-left: 15px;
-}
------------------------------------------------------ */
 
 #sidebar ul {
 	list-style: none;
@@ -211,19 +172,10 @@ pre code {
   transition: color 0s !important;
 }
 
-#sidebar.dark-mode ul li a::before {
-  color: white;
-  transition: color 0s !important;
-}
-
 #sidebar ul li a:hover {
     color: #ffffff;
     background: #9E7E38 !important;
 	border-radius: 0px 15px 15px 0px;
-}
-
-a[data-toggle="collapse"] {
-    position: relative;
 }
 
 .dropdown-toggle::after {
@@ -239,11 +191,6 @@ a[data-toggle="collapse"] {
     padding-left: 0px !important;
 	color: #000000;
 	white-space: nowrap
-}
-
-#sidebar.dark-mode ul ul a {
-	background: black;
-	color: white;
 }
 
 #sidebar ul li a.active {
@@ -277,30 +224,4 @@ a[data-toggle="collapse"] {
     padding-bottom: 65vh;
     padding-left: 40px;
     padding-right: 40px;
-}
-
-#content.active {
-    width: 100%;
-}
-
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -300px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #content {
-        width: 100%;
-    }
-    #content.active {
-        width: calc(100% - 300px);
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
 }
