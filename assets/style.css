@@ -128,10 +128,6 @@ pre code {
     background: #ffffff;
 }
 
-#sidebar ul.components {
-    padding: 60px 0px;
-}
-
 #sidebar ul.list-group {
     padding-top: 60px;
     padding-left: 15px;
@@ -154,22 +150,6 @@ pre code {
     padding: 0px;
     font-size: 1.1em;
 	margin-left: 0px;
-}
-
-#sidebar ul li ul {
-    padding-left: 15px;
-}
-
-#sidebar ul li a::before {
-  content: "\2022";
-  color: black;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-  font-size: 1.3em;
-  font-style: normal !important;
-  transition: color 0s !important;
 }
 
 #sidebar ul li a:hover {
