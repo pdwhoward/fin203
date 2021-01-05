@@ -51,6 +51,11 @@ pre code {
   padding: 20px;
 }
 
+hr {
+  border-top: 3px solid #D3D3D3;
+  border-radius: 5px;
+}
+
 .navbar {
     padding: 15px 0px;
     background: #fff;
@@ -153,8 +158,8 @@ pre code {
 }
 
 #sidebar ul li a:hover {
-    color: #ffffff;
-    background: #9E7E38 !important;
+    color: #000000 !important;
+    background: #E7DCBA !important;
 	border-radius: 0px 15px 15px 0px;
 }
 
